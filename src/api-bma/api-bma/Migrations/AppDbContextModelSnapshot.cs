@@ -8,7 +8,7 @@ using api_bma.Models;
 
 #nullable disable
 
-namespace api_bma.Migrations
+namespace consume_api_bma.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot

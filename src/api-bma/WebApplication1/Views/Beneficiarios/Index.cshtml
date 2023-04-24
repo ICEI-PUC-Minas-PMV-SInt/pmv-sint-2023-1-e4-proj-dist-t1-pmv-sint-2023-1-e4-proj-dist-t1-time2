@@ -1,0 +1,47 @@
+﻿@model IEnumerable<consume_api_bma.Models.Beneficiario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BeneficiarioId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantidadeDependentes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.titularBolsaFamilia.nome)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BeneficiarioId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.quantidadeDependentes)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.titularBolsaFamilia.nome)
+                </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
