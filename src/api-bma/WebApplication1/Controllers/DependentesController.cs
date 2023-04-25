@@ -11,7 +11,7 @@ namespace consume_api_bma.Controllers
     List<Dependente> _dependentes = new List<Dependente>();
         
             // GET: DependentesController
-            [HttpGet]
+    [HttpGet]
     public async Task<IActionResult> Index()
     {
         _dependentes = new List<Dependente>();
