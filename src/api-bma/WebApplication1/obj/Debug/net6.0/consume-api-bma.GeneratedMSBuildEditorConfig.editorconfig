@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\workspace\projetoPUCMinas\projeto_eixo4\githubteste\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\src\api-bma\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lhcmlvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lhcmlvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Dependentes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Dependentes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Home/Index.cshtml]

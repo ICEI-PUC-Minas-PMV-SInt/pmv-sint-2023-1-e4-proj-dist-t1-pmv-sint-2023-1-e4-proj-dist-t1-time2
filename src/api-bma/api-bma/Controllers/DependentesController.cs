@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using api_bma.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace api_bma.Controllers
 {
@@ -20,6 +21,7 @@ namespace api_bma.Controllers
             var model = await _context.Dependentes.ToListAsync();
             return Ok(model);
         }
+       
         [HttpPost]
         public async Task<ActionResult> Create(Dependente model)
         {
@@ -36,8 +38,9 @@ namespace api_bma.Controllers
             var model = await _context.Dependentes
                 .FirstOrDefaultAsync(c => c.Id == id);
             if (model == null) NotFound();
-
+            
             GerarLinks(model);
+            
             return Ok(model);
         }
         [HttpPut("{id}")]

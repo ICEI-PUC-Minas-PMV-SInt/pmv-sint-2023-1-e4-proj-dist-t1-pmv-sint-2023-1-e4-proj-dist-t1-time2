@@ -9,10 +9,13 @@ namespace consume_api_bma.Controllers
     public class BeneficiariosController : Controller
     {
         List<Beneficiario> _beneficiarios = new List<Beneficiario>();
-        // GET: BeneficiariosController
+        Beneficiario _beneficiario = new Beneficiario();
 
         
-    [HttpGet]
+        // GET: BeneficiariosController
+
+
+        [HttpGet]
     public async Task <IActionResult> Index()
     {
         _beneficiarios = new List<Beneficiario>();
@@ -35,7 +38,8 @@ namespace consume_api_bma.Controllers
     // GET: BeneficiariosController/Details/5
     public ActionResult Details(int id)
     {
-        return View();
+              ;
+            return View();
     }
 
     // GET: BeneficiariosController/Create

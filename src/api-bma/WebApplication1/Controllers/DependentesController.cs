@@ -8,14 +8,31 @@ namespace consume_api_bma.Controllers
 {
     public class DependentesController : Controller
 {
-    // GET: DependentesController
-    public ActionResult Index()
+    List<Dependente> _dependentes = new List<Dependente>();
+        
+            // GET: DependentesController
+            [HttpGet]
+    public async Task<IActionResult> Index()
     {
-        return View();
-    }
+        _dependentes = new List<Dependente>();
+            using (var client = new HttpClient())
+            {
 
-    // GET: DependentesController/Details/5
-    public ActionResult Details(int id)
+                using (var response = await client.GetAsync("https://localhost:7255/api/Dependentes"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+
+                    _dependentes = JsonConvert.DeserializeObject<List<Dependente>>(apiResponse);
+
+                }
+
+            }
+
+            return View(_dependentes);
+        }
+
+        // GET: DependentesController/Details/5
+        public ActionResult Details(int id)
     {
         return View();
     }
@@ -23,6 +40,7 @@ namespace consume_api_bma.Controllers
     // GET: DependentesController/Create
     public ActionResult Create()
     {
+            
         return View();
     }
 
@@ -31,17 +49,34 @@ namespace consume_api_bma.Controllers
     [ValidateAntiForgeryToken]
     public ActionResult Create(Dependente model)
     {
-        string data = JsonConvert.SerializeObject(model);
-        StringContent content = new StringContent(data, Encoding.UTF8,"application/json");
-       
+        
+
         try
         {
-            return RedirectToAction(nameof(Index));
-        }
-        catch
+            string data = JsonConvert.SerializeObject(model);
+            StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+            using (var client = new HttpClient())
+            {
+
+                using (var response = client.PostAsync("https://localhost:7255/api/Dependentes", content).Result)
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        TempData["successMessage"] = "Dependente Cadastrado.";
+                        return RedirectToAction(nameof(Index));
+                    }
+
+                }
+
+            }
+                
+            }
+        catch (Exception ex)
         {
+            TempData["errorMessage"] = ex.Message;
             return View();
         }
+        return View();
     }
 
     // GET: DependentesController/Edit/5
