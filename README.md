@@ -1,3 +1,14 @@
-# pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2
+# Sistema de Gerenciamento do Banco de alimentos de Poços de Caldas
 
-Repositorio do Projeto Banco Municipal de Alimentos.
+`Tecnologias em Sistemas para Internet`
+`Projeto de Desenvolvimento de Aplicações Distribuídas`
+`4º`
+
+## Integrantes
+
+* Adriana Cristina Souza Leite
+* Dayana Cecília Reis Beirigo Dutra
+
+## Orientador
+
+* Luiz Gomes
