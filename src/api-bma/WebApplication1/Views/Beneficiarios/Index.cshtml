@@ -9,6 +9,12 @@
 <p>
     <a asp-action="Create">Cadastrar novo Beneficiario</a>
 </p>
+@using (Html.BeginForm("FindBeneficiario", "Beneficiarios", FormMethod.Get))
+{
+    <span>Insira o nº NIS do Beneficiário:</span>
+    <input type="text" name="nis" />
+    <input type="submit" value="Buscar" />
+}
 <table class="table">
     <thead>
         <tr>
@@ -20,6 +26,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.titularBolsaFamilia.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.titularBolsaFamilia.nis)
             </th>
             <th></th>
         </tr>
@@ -36,6 +45,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.titularBolsaFamilia.nome)
                 </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.titularBolsaFamilia.nis)
+                </td>
+
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |

@@ -1,7 +1,10 @@
-﻿using consume_api_bma.Models;
+﻿using Azure;
+using consume_api_bma.Models;
+using MessagePack;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace consume_api_bma.Controllers
 {
@@ -15,12 +18,13 @@ namespace consume_api_bma.Controllers
         // GET: BeneficiariosController
 
 
-        [HttpGet]
-    public async Task <IActionResult> Index()
+    [HttpGet]
+    public async Task <IActionResult> Index(string nis)
     {
-        _beneficiarios = new List<Beneficiario>();
-        using (var client = new HttpClient())       
-        {
+            _beneficiarios = new List<Beneficiario>();
+
+            using (var client = new HttpClient())
+            {
 
                 using (var response = await client.GetAsync("https://localhost:7255/api/Beneficiarios"))
                 {
@@ -28,21 +32,44 @@ namespace consume_api_bma.Controllers
 
                     _beneficiarios = JsonConvert.DeserializeObject<List<Beneficiario>>(apiResponse);
 
+
                 }
 
+
+            }
+            return View(_beneficiarios);
+     }
+        [HttpGet]
+        public async Task<IActionResult> FindBeneficiario(string nis)
+        {
+            _beneficiarios = new List<Beneficiario>();
+
+            using (var client = new HttpClient())
+            {
+
+                using (var response = await client.GetAsync("https://localhost:7255/" + nis))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+
+                    _beneficiarios = JsonConvert.DeserializeObject<List<Beneficiario>>(apiResponse);
+
+
+                }
+
+
+            }
+            return View(_beneficiarios);
         }
 
-            return View(_beneficiarios);
-    }
-
-    // GET: BeneficiariosController/Details/5
-    public ActionResult Details(int id)
+        // GET: BeneficiariosController/Details/5
+        public ActionResult Details(int id)
     {
               ;
             return View();
     }
 
-    // GET: BeneficiariosController/Create
+        // GET: BeneficiariosController/Create
+    [HttpGet]
     public ActionResult Create()
     {
         return View();
@@ -51,16 +78,35 @@ namespace consume_api_bma.Controllers
     // POST: BeneficiariosController/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public ActionResult Create(IFormCollection collection)
+    public ActionResult Create(Beneficiario model)
     {
-        try
-        {
-            return RedirectToAction(nameof(Index));
-        }
-        catch
-        {
+            try
+            {
+                string data = JsonConvert.SerializeObject(model);
+                StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+                using (var client = new HttpClient())
+                {
+
+                    using (var response = client.PutAsync("https://localhost:7255/api/Beneficiarios", content).Result)
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            TempData["successMessage"] = "Endereço Atualizado.";
+                            return RedirectToAction(nameof(Index));
+                        }
+
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                TempData["errorMessage"] = ex.Message;
+                return View();
+            }
             return View();
-        }
+        
     }
 
     // GET: BeneficiariosController/Edit/5

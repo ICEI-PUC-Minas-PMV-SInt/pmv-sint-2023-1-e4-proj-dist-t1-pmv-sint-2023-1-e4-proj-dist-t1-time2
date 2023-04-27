@@ -64,14 +64,14 @@ namespace api_bma.Controllers
         }
         [HttpPut("{id}")]
 
-        public async Task<ActionResult> Update(int id, Dependente model)
+        public async Task<ActionResult> Update(int id, Endereco model)
         {
-            if (id != model.Id) return BadRequest();
+            if (id != model.EnderecoId) return BadRequest();
             var modeloDb = await _context.Enderecos.AsNoTracking()
                 .FirstOrDefaultAsync(c => c.EnderecoId == id);
             if (modeloDb == null) return NotFound();
 
-            _context.Dependentes.Update(model);
+            _context.Enderecos.Update(model);
             await _context.SaveChangesAsync();
 
             return NoContent();

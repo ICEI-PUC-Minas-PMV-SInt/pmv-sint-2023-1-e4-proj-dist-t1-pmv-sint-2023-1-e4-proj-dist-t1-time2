@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3m9ydg6IQRAOogq/yIu5O4PdXQU2PNBjbjZ7pp365fc=",
+  "Hash": "IsOVTHtaDFUVVnzQtedXosQ4hqlICdtwihYzwN1i3QE=",
   "Source": "consume-api-bma",
   "BasePath": "_content/consume-api-bma",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\img\\boxes-g524dce930_1280.jpg",
+      "SourceId": "consume-api-bma",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/consume-api-bma",
+      "RelativePath": "img/boxes-g524dce930_1280.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\boxes-g524dce930_1280.jpg"
+    },
+    {
+      "Identity": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\img\\logo_bma.png",
+      "SourceId": "consume-api-bma",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/consume-api-bma",
+      "RelativePath": "img/logo_bma.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo_bma.png"
     },
     {
       "Identity": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\js\\site.js",

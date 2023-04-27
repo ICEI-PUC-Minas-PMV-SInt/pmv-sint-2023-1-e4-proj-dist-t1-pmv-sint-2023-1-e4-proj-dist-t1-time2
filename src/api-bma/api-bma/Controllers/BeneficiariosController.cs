@@ -48,7 +48,7 @@ namespace api_bma.Controllers
 
 
         }
-        [HttpGet ("nis")]
+        [HttpGet ("/{nis}")]
         
         public async Task<ActionResult>GetBeneficiario(string nis)       
         {
@@ -60,7 +60,7 @@ namespace api_bma.Controllers
                 client.DefaultRequestHeaders.Add("chave-api-dados", "94347ff5413fdff1f093ae4440d67130");
 
 
-                using (var response = await client.GetAsync($"https://api.portaldatransparencia.gov.br/api-de-dados/bolsa-familia-disponivel-por-cpf-ou-nis?anoMesCompetencia=202001&codigo={nis}"))
+                using (var response = await client.GetAsync("https://api.portaldatransparencia.gov.br/api-de-dados/bolsa-familia-disponivel-por-cpf-ou-nis?anoMesCompetencia=202001&codigo=" + nis))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     

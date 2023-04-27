@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\img\\boxes-g524dce930_1280.jpg",
+      "PackagePath": "staticwebassets\\img\\boxes-g524dce930_1280.jpg"
+    },
+    {
+      "Id": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\img\\logo_bma.png",
+      "PackagePath": "staticwebassets\\img\\logo_bma.png"
+    },
+    {
       "Id": "C:\\workspace\\projetoPUCMinas\\projeto_eixo4\\githubteste\\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\\src\\api-bma\\WebApplication1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
