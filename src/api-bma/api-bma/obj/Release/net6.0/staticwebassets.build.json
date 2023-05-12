@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UwXeK3bgWPE/csTGTrnPfXIUMgrFJroS9BnHruB1/3I=",
+  "Source": "api-bma",
+  "BasePath": "_content/api-bma",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

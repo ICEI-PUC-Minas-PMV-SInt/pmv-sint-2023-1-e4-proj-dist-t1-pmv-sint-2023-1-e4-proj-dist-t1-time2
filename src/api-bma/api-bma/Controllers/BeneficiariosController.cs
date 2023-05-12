@@ -7,6 +7,7 @@ using api_bma.Models;
 namespace api_bma.Controllers
 {
     [Route("api/[controller]")]
+    
     [ApiController]
     public class BeneficiariosController : ControllerBase
     {

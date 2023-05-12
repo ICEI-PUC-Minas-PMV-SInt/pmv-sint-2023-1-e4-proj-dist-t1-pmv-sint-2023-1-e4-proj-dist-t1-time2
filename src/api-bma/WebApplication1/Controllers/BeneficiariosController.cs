@@ -70,10 +70,34 @@ namespace consume_api_bma.Controllers
 
         // GET: BeneficiariosController/Create
     [HttpGet]
-    public ActionResult Create()
+    public ActionResult Create(string nis)
     {
-        return View();
-    }
+            try
+            {
+                _beneficiarios = new List<Beneficiario>();
+                using (var client = new HttpClient())
+                {
+                    using (var response = client.GetAsync("https://localhost:7255/" + nis).Result)
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string data = response.Content.ReadAsStringAsync().Result;
+                            _beneficiarios = JsonConvert.DeserializeObject<List<Beneficiario>>(data);
+                        }
+
+
+
+                    }
+
+                }
+                return View(_beneficiarios);
+            }
+            catch (Exception ex)
+            {
+                TempData["errorMessage"] = ex.Message;
+                return View();
+            }
+        }
 
     // POST: BeneficiariosController/Create
     [HttpPost]
