@@ -36,6 +36,60 @@ Para determinar os requisitos do sistema, foram utilizados os seguintes perfis d
 |RF-18|O sistema deve registrar as doações recebidas por meio de campanhas de arrecadação, pessoas físicas e jurídicas.|MÉDIA|BAIXA|
 |RF-19|O sistema deve emitir relatórios gerenciais com informações sobre: quantitativo de cestas doadas por regional; quantitativo de beneficiários; renda média das pessoas atendidas; demanda de cestas por regional; gasto do governo federal e municipal; quantidade de alimentos doados em determinado período.|MÉDIA|MÉDIA|
 
+### 1.2 Requisitos Não Funcionais
+1. RNF1 - Disponibilidade- O sistema deve estar disponível em horário integral, durante 24 horas por dia e sete dias por semana.
+
+|Estímulo|O beneficiário acessa o sistema no domingo no período da madrugada.|
+|---|---|
+|Fonte do estímulo|Beneficiário.|
+|Ambiente|Sistema com carga normal.|
+|Artefato|O sistema como um todo.|
+|Resposta|O sistema deve permitir o acesso ao beneficiário em qualquer hora, seja do dia ou da noite.|
+|Medida de resposta|100% das tentativas de acesso e requisição de informações ao sistema devem ser respondidas.|
+
+2. RNF2 - Desempenho- A latência total do sistema não deve ultrapassar 10 segundos.
+
+|Estímulo|O usuário autenticado acessa uma funcionalidade na interface gráfica do sistema.|
+|---|---|
+|Fonte do estímulo|Usuário autenticado.|
+|Ambiente|Sistema com carga normal.|
+|Artefato|Módulo de informações cadastrais.|
+|Resposta|O sistema processa a solicitação e retorna a informação em até 10 segundos para o usuário.|
+|Medida de resposta|Resposta do sistema com até 10 segundos de duração.|
+
+3. RNF3 - Desempenho- O sistema deve estar preparado para receber alto volume de requisições simultaneamente, apresentar bom desempenho e, para não haver sobrecarga, possuir infraestrutura escalável.
+
+|Estímulo|Grande quantidade de usuários acessam simultaneamente o sistema.|
+|---|---|
+|Fonte do estímulo|Usuários requisitam e fornecem informações.|
+|Ambiente|Sistema com carga além do normal.|
+|Artefato|Sistema como um todo.|
+|Resposta|O sistema funciona sem atrasos nas requisições e com bom desempenho sem interferir na experiência do usuário.|
+|Medida de resposta|Requisições e respostas com rapidez e sistema utilizando sua capacidade elástica para comportar todas as operações.|
+
+4. RNF4 - Segurança- O sistema deve possuir controle de acesso baseado em funções (RBAC)
+
+|Estímulo|O administrador realiza o cadastro de um novo usuário no sistema.|
+|---|---|
+|Fonte do estímulo|Administrador.|
+|Ambiente|Sistema com carga baixa, normal e além do normal.|
+|Artefato|Módulo de Autenticação.|
+|Resposta|Cadastro de usuário no sistema.|
+|Medida de resposta|Ao verificar o banco de dados, o novo usuário deverá ter o perfil de acordo com o que foi cadastrado.|
+
+5. RNF5 - Segurança- O sistema deve negar a entrada de usuário não autorizado.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
