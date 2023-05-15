@@ -1,4 +1,5 @@
-## 1. Especificação da Solução
+
+<h2>1. Especificação da Solução</h2>
 Para determinar os requisitos do sistema, foram utilizados os seguintes perfis de usuários do sistema, descritos no quadro a seguir:
 
 |Perfil|Descrição|
@@ -11,7 +12,8 @@ Para determinar os requisitos do sistema, foram utilizados os seguintes perfis d
 [^1]: BMA - Banco Municipal de Alimentos
 [^2]: CRAS - Centro de Referência de Assistência Social
 
-### 1.1 Requisitos Funcionais 
+<details>
+  <summary><h3>1.1 Requisitos Funcionais</h3></summary> 
 
 |ID|Descrição do Requisito|Dificuldade|Prioridade|
 |:---:|:---:|:---:|:---:|
@@ -35,8 +37,10 @@ Para determinar os requisitos do sistema, foram utilizados os seguintes perfis d
 |RF-17|O sistema deve registrar o orçamento público destinado ao BMA, especificando a fonte financeira (federal ou municipal)|BAIXA|BAIXA|
 |RF-18|O sistema deve registrar as doações recebidas por meio de campanhas de arrecadação, pessoas físicas e jurídicas.|MÉDIA|BAIXA|
 |RF-19|O sistema deve emitir relatórios gerenciais com informações sobre: quantitativo de cestas doadas por regional; quantitativo de beneficiários; renda média das pessoas atendidas; demanda de cestas por regional; gasto do governo federal e municipal; quantidade de alimentos doados em determinado período.|MÉDIA|MÉDIA|
-
-### 1.2 Requisitos Não Funcionais
+</details>
+  
+<details>
+  <summary><h3>1.2 Requisitos Não Funcionais</h3></summary>
 1. RNF1 - Disponibilidade- O sistema deve estar disponível em horário integral, durante 24 horas por dia e sete dias por semana.
 
 |Estímulo|O beneficiário acessa o sistema no domingo no período da madrugada.|
@@ -136,8 +140,10 @@ Para determinar os requisitos do sistema, foram utilizados os seguintes perfis d
 |Artefato|Módulo de informações cadastrais.|
 |Resposta|Confirmação do registro no banco de dados.|
 |Medida de resposta|Envio de mensagens de confirmação e apresentação de informação proveniente do banco de dados.|
+</details>
 
-### 1.3 Restrições Arquiteturais. 
+<details>
+  <summary><h3>1.3 Restrições Arquiteturais.</h3></summary> 
 
 |ID|Restrição|
 |:---:|:---:|
@@ -154,8 +160,10 @@ R10|As camadas do sistema deverão ser construídas e hospedadas em nuvem por me
 R11|Os módulos do sistema deverão fazer uso do banco de dados relacional MySQL.
 R12|Deve ser utilizado o GIT como ferramenta de versionamento do código.
 R13|O sistema deve possuir características de aplicação distribuída: abertura, portabilidade, uso de recursos de rede.
+</details>  
 
-### 1.4 Mecanismos Arquiteturais.
+<details>
+  <summary><h3>1.4 Mecanismos Arquiteturais.</h3></summary>
 
 Análise|Design|Implementação
 |:---:|:---:|:---:|
@@ -177,6 +185,10 @@ Versionamento|Controle e armazenamento do código fonte|GitHub
 Versionamento|Versionamento do código fonte|Git
 Build|Ferramenta de build de componentes de software|NuGet
 Folha de estilos|Linguagem de folha de estilos|CSS
+
+  </details>
+  
+
 
 
 
