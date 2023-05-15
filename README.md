@@ -14,4 +14,4 @@
 * Luiz Gomes
 
 ## Documentação
-1. [Especificação da Solução](docs/1-Especificação da solução.md) 
+1. [Especificação da Solução]
