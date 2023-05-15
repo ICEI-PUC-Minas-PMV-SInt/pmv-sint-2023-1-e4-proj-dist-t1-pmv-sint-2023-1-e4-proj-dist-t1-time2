@@ -137,6 +137,57 @@ Para determinar os requisitos do sistema, foram utilizados os seguintes perfis d
 |Resposta|Confirmação do registro no banco de dados.|
 |Medida de resposta|Envio de mensagens de confirmação e apresentação de informação proveniente do banco de dados.|
 
+### 1.3 Restrições Arquiteturais. 
+
+|ID|Restrição|
+|:---:|:---:|
+|R1|O front end deve ser desenvolvido em cshtml e, para isso, deverá ser utilizado o framework asp.Net na versão mais recente.
+|R2|Em relação ao guia de estilo, deve-se utilizar o framework Bootstrap para padronização de interface com o usuário.
+R3|Como linguagem de folha de estilos deve-se utilizar o CSS.
+R4|Para responsividade do sistema, o mesmo deve fazer uso de Media Queries e do sistema Grid do Bootstrap.
+R5|O sistema deverá expor funcionalidades e interoperar com outras aplicações legadas utilizando o protocolo HTTP por meio de APIs RESTful.
+R6|O sistema deverá utilizar o formato JSON para transporte de informações.
+R7|A autorização entre as APIS deve ser realizada por meio de JWT.
+R8|O sistema deve ser construído em camadas.
+R9|Os módulos que compõe os microserviços no backend devem ser desenvolvidos em linguagem C# utilizando o asp.Net como ambiente de execução do lado do servidor.
+R10|As camadas do sistema deverão ser construídas e hospedadas em nuvem por meio da plataforma Azure.
+R11|Os módulos do sistema deverão fazer uso do banco de dados relacional MySQL.
+R12|Deve ser utilizado o GIT como ferramenta de versionamento do código.
+R13|O sistema deve possuir características de aplicação distribuída: abertura, portabilidade, uso de recursos de rede.
+
+### 1.4 Mecanismos Arquiteturais.
+
+Análise|Design|Implementação
+|:---:|:---:|:---:|
+Persistência|Framework ORM|Entity Framework
+Persistência|Banco de dados relacional|MySQL
+Front end|Framework de desenvolvimento|Asp.Net Core MVC
+Front end|Linguagem de programação|cshtml
+Front end|Framework de estilos|Bootstrap
+Deploy|Plataforma de deploy|Azure
+Back end|Linguagem de programação|C#
+Back end|Ambiente de execução|Visual Studio
+Back end|Serviço de execução do código|Azure
+Autenticação|Padrão de formato de autenticação|JWT
+Autenticação|Serviço de autenticação|JWTBearer
+Integração|Formato de transporte de informações|JSON
+Integração|Protocolo de comunicação|HTTP
+Integração|Estilo de arquitetura|REST
+Versionamento|Controle e armazenamento do código fonte|GitHub
+Versionamento|Versionamento do código fonte|Git
+Build|Ferramenta de build de componentes de software|NuGet
+Folha de estilos|Linguagem de folha de estilos|CSS
+
+
+
+
+
+
+
+
+
+
+
 
 
 
