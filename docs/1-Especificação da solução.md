@@ -79,6 +79,68 @@ Para determinar os requisitos do sistema, foram utilizados os seguintes perfis d
 
 5. RNF5 - Segurança- O sistema deve negar a entrada de usuário não autorizado.
 
+|Estímulo|Usuário realiza ação de carregamento de uma página protegida ao qual necessita de login e senha para ser visualizada.|
+|---|---|
+|Fonte do estímulo|Usuário não autenticado.|
+|Ambiente|Sistema com carga normal.|
+|Artefato|Módulo de Autenticação.|
+|Resposta|A página de login é carregada, ocorre o envio de mensagem informando a negação de acesso e solicitando a informação de usuário e senha.|
+|Medida de resposta|Todas as requisições com usuário ou senha incorretos devem impedir que o usuário entre na página protegida do sistema.|
+
+6. RNF6 - Segurança- O sistema deve negar a entrada de usuário sem informações de login.
+
+|Estímulo|Usuário tenta fazer login com informações de registro de usuário e senha incorretos.|
+|---|---|
+|Fonte do estímulo|Usuário não autenticado.|
+|Ambiente|Sistema com carga normal.|
+|Artefato|Módulo de Autenticação.|
+|Resposta|Envio de mensagem informando que o usuário e senha estão incorretos.|
+|Medida de resposta|Todas as requisições com usuário ou senha incorretos devem impedir que o usuário entre na página protegida do sistema.|
+
+7. RNF7 - Testabilidade- O sistema deve ser testável em todas suas funcionalidades.
+
+|Estímulo|Desenvolvedor de software executa testes unitários do sistema para verificar se não houve quebra de funcionalidades anteriores ao implementar uma nova funcionalidade.|
+|---|---|
+|Fonte do estímulo|Desenvolvedor de software.|
+|Ambiente|Ambiente de desenvolvimento.|
+|Artefato|Módulo de informações cadastrais.|
+|Resposta|O sistema validou todas as regras de negócio cobertas por testes unitários.|
+|Medida de resposta|Testes unitários passando na verificação com status OK.|
+
+8. RNF8 - Acessibilidade- O sistema deverá prover uma interface gráfica simples, fácil de usar, responsiva e adaptativa para browsers e diferentes resoluções de modo que seja disponibilizada nas plataformas web e móvel.
+
+|Estímulo|Usuário logado utilizando a interface gráfica do sistema.|
+|---|---|
+|Fonte do estímulo|Usuário logado.|
+|Ambiente|Sistema com carga baixa, normal e além do normal.|
+|Artefato|Módulo de informações cadastrais.|
+|Resposta|A interface gráfica do projeto apresenta navegabilidade e objetividade nas ações disponíveis ao usuário.|
+|Medida de resposta|O usuário realiza suas ações rapidamente e sem desvios indesejados para outras funcionalidades.|
+
+9. Interoperabilidade- O sistema deverá interoperar com aplicações legadas com baixo acoplamento utilizando APIs ou outros recursos para consumo de serviços.
+
+|Estímulo|Para completar uma operação, o sistema precisa recuperar uma informação que está localizada no domínio de uma aplicação legada.|
+|---|---|
+|Fonte do estímulo|O sistema como um todo.|
+|Ambiente|Sistema com carga normal.|
+|Artefato|Módulo de informações cadastrais.|
+|Resposta|Troca de informações com os sistemas legados.|
+|Medida de resposta|Conexão, envio de mensagens e/ou requisições e/ou respostas provenientes de aplicações legadas.|
+
+10. RNF10 - Interoperabilidade- O sistema deverá se comunicar com sistema de banco de dados.
+
+|Estímulo|Para completar uma operação, o sistema precisa ler e atualizar os dados em um banco de dados.|
+|---|---|
+|Fonte do estímulo|O sistema como um todo.|
+|Ambiente|Sistema com carga normal.|
+|Artefato|Módulo de informações cadastrais.|
+|Resposta|Confirmação do registro no banco de dados.|
+|Medida de resposta|Envio de mensagens de confirmação e apresentação de informação proveniente do banco de dados.|
+
+
+
+
+
 
 
 
