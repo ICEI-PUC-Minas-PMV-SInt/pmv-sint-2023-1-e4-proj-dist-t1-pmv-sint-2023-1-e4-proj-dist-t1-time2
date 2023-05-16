@@ -14,4 +14,9 @@
 * Luiz Gomes
 
 ## Documentação
-1. [Especificação da Solução](docs/1-Especificação da solução.md)
+<ol>
+  <li><a href="docs/1-Especificação da solução.md">Especificação da Solução</a></li>
+  <li><a href="docs/2-Projeto Arquitetural.md">Projeto Arquitetural</a></li>
+  <li><a href="docs/3-Abordagem de testes de software.md">Abordagem de Testes de Software</a></li>
+</ol>
+  
