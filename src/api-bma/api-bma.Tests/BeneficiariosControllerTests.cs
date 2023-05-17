@@ -9,11 +9,11 @@ namespace api_bma.Tests
 {
     public class BeneficiariosControllerTests
     {
-       private List<Beneficiario> _beneficiarios;
-       public BeneficiariosControllerTests() 
-       {
-            _beneficiarios = A.FakeList<Beneficiario>();
-        }
+       //private List<Beneficiario> _beneficiarios;
+       //public BeneficiariosControllerTests() 
+       //{
+       //     _beneficiarios = A.FakeList<Beneficiario>();
+       // }
       
     }
 }
