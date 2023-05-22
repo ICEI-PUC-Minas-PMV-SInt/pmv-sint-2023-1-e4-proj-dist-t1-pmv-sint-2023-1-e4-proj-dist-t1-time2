@@ -1,0 +1,36 @@
+.benform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+}
+.identificacao{
+    display: flex;
+    flex-direction: row;
+    margin:1em;  
+    
+}
+.endereco{
+    display: flex;
+    flex-direction: column;
+    margin:1em; 
+}
+.endereco div{
+    display: flex;
+    flex-direction: row;
+}
+.street input{
+    width: 85vh;
+}
+.identificacao div, .endereco div{
+    margin: 0.5em;
+    padding-right: 1em;
+}
+
+.dadospessoais,.localizacao{
+    border: 2px solid;
+    border-radius: 5px;
+    width: 100%;
+    margin:1em 0;
+}
+

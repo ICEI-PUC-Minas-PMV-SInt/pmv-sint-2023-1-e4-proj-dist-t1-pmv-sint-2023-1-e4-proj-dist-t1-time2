@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = consume-api-bma
 build_property.RootNamespace = consume-api-bma
-build_property.ProjectDir = C:\workspace\projetoPUCMinas\projeto_eixo4\githubteste\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\src\api-bma\WebApplication1\
+build_property.ProjectDir = c:\workspace\projetoPUCMinas\projeto_eixo4\githubteste\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\src\api-bma\WebApplication1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\workspace\projetoPUCMinas\projeto_eixo4\githubteste\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\src\api-bma\WebApplication1
+build_property.MSBuildProjectDirectory = c:\workspace\projetoPUCMinas\projeto_eixo4\githubteste\pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2\src\api-bma\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Create.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lhcmlvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Details.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lhcmlvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/FindBeneficiario.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/FindBeneficiario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lhcmlvc1xGaW5kQmVuZWZpY2lhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Index.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Beneficiarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVuZWZpY2lhcmlvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Dependentes/Create.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Dependentes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Dependentes/Index.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Dependentes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Endereco/Edit.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Endereco/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Endereco/Index.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Endereco/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5kZXJlY29cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Home/Index.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Home/Privacy.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Shared/Error.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/_ViewImports.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/_ViewStart.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Shared/_Layout.cshtml]
+[c:/workspace/projetoPUCMinas/projeto_eixo4/githubteste/pmv-sint-2023-1-e4-proj-dist-t1-pmv-sint-2023-1-e4-proj-dist-t1-time2/src/api-bma/WebApplication1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-h1jodnhdzo

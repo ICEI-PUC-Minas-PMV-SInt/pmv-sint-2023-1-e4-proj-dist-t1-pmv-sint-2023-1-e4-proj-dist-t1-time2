@@ -1,0 +1,42 @@
+.content{
+    padding: 2em;
+    margin:10px 250px;
+    
+    color: #6B6B6B;
+    font-weight: 400; 
+    border-top: 2px solid;
+    border-bottom: 2px solid ;
+    
+}
+.content div{
+    
+    margin-top: 1em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content p{
+    flex-direction: row;
+    padding: 1em;
+    
+}
+.content span{
+    padding-right: 0.5em ;
+}
+h3{
+    background-color: #c0c0c0;
+    
+}
+.btn{
+    color: #fff;
+    padding: 0.5em 1em;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    max-height: 40px;    
+}
+.btn:hover{
+    background-color:#0E3127;
+    color:#ffbb33
+}

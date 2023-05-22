@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.family-group{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    
+    background: #21715B;
+}
+
+.family-group h1{
+    font-size: 53px;
+    color: white;
+    text-shadow: 2px 2px 9px black;
+    position: relative;
+    left: 110px;
+    top: 26px;
+}
+
+.family-group img{
+    width: 40%;
+    position: relative;
+    top: 44px;
+    left: 100px;
+}
+
+.login-card{
+    position: absolute;
+    width: 624px;
+    height: 100%;
+    left: 742px;
+    top: 0px;
+    
+    background: #86BCAA;
+}
+
+.login-title h2{
+    color: white;
+    position: relative;
+    left: 18%;
+    top: 18px;
+    width: 360px;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+    font-size: 36px;
+}
+
+.login-text span{
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+    width: 425px;
+    position: absolute;
+    font-size: 18px;
+    top: 189px;
+    left: 86px;
+}
+
+
+.form-login{
+    position: absolute;
+    top: 44.1%;
+    left: 13.8%;
+    width: 430.8px;
+}
+
+.form-login .campo-cpf{
+    position: absolute;
+    left: 105px;
+    width: 50%;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    background: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    transition: 0.3s;
+    background-image: url(/bma/src/img/user-icon-blank.png);
+    background-repeat: no-repeat;
+}
+
+.form-login .campo-cpf:focus{
+    background: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 2px solid #ECDE73;
+    transition: 0.3s;
+    position: absolute;
+    left: 3px;
+    width: 100%;
+    height: 40px;
+    background-image: url(/bma/src/img/user-icon-yellow.png);
+    background-repeat: no-repeat;
+}
+
+.form-login .submit-buttom{
+    background-color: transparent;
+    position: absolute;
+    top: 374.1%;
+    left: 36.5%;
+    width: 122.6px;
+    height: 33.8px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.2s;
+    
+}
+
+.form-login .submit-buttom:hover{
+    top: 387.1%;
+    left: 30.5%;
+    width: 168.6px;
+    height: 38.8px;
+    font-size: 24px;
+    transition: 0.2s;
+    color: #ECDE73;
+    border: 2px solid #ECDE73;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.help-text {
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    text-align: center;
+    width: 450px;
+    position: absolute;
+    font-size: 18px;
+    top: 465px;
+    left: 68px;
+}
+
+.help-text b, a{
+    color: #ECDE73;
+    text-decoration: none;
+}
+
+.help-text a:visited{
+    outline: none;
+    stroke: none;
+    border: none;
+    text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.checkbox_control{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    
+}
+.checkbox_control div{
+    display: flex;
+    align-items: center;
+    
+}
+.checkbox_control label{
+    margin-bottom: 0.6em;
+    font-weight: bold;   
+    
+}
+
+.checkbox_control input{
+    padding: 0.7em;
+    
+      
+    
+    
+}
+
+

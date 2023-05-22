@@ -26,7 +26,7 @@ namespace consume_api_bma.Controllers
             using (var client = new HttpClient())
             {
 
-                using (var response = await client.GetAsync("https://localhost:7255/api/Beneficiarios"))
+                using (var response = await client.GetAsync("https://api-bma20230517120651.azurewebsites.net/api/Beneficiarios"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
 
@@ -47,7 +47,7 @@ namespace consume_api_bma.Controllers
             using (var client = new HttpClient())
             {
 
-                using (var response = await client.GetAsync("https://localhost:7255/" + nis))
+                using (var response = await client.GetAsync("https://api-bma20230517120651.azurewebsites.net/" + nis))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
 
@@ -77,7 +77,7 @@ namespace consume_api_bma.Controllers
                 _beneficiarios = new List<Beneficiario>();
                 using (var client = new HttpClient())
                 {
-                    using (var response = client.GetAsync("https://localhost:7255/" + nis).Result)
+                    using (var response = client.GetAsync("https://api-bma20230517120651.azurewebsites.net" + nis).Result)
                     {
                         if (response.IsSuccessStatusCode)
                         {
@@ -111,7 +111,7 @@ namespace consume_api_bma.Controllers
                 using (var client = new HttpClient())
                 {
 
-                    using (var response = client.PutAsync("https://localhost:7255/api/Beneficiarios", content).Result)
+                    using (var response = client.PutAsync("https://api-bma20230517120651.azurewebsites.net/api/Beneficiarios", content).Result)
                     {
                         if (response.IsSuccessStatusCode)
                         {

@@ -1,0 +1,34 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+    
+     
+}
+.baskets,.identificacao{
+    border: 2px solid;
+    border-radius: 5px;
+    width: 100%;
+    margin:1em 0;
+}
+.buscacpf, .checkbox{
+    display: flex;
+    flex-direction: row;
+    margin:1em;
+    
+}
+.checkbox div{
+    display: flex;
+    flex-direction: row
+}
+
+.buscacpf div, .checkbox div{
+    padding-right: 1em;
+    
+}
+legend{
+    text-align: center;
+    
+}
+

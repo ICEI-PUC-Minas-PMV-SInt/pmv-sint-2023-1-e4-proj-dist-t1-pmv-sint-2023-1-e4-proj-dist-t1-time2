@@ -1,0 +1,32 @@
+.busca_cpf{
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    align-content: center;   
+}
+.result{
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+     align-items: center;
+    
+ }
+.busca_cpf button, .result button{
+    background: #21715B;
+    color:#FFF;    
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1em;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}

@@ -1,0 +1,163 @@
+
+.nav-menu{
+   width: 150px;
+   height: 100vh;   
+   display: flex;
+   flex-direction: column;
+   position:absolute;
+   
+   left:0;
+   padding: 6px 14px;
+   justify-content: start;
+   background: #43907D;
+   
+   
+}
+.nav-menu.active {
+   left:0;
+   transition: 350ms;
+   width: 350px;
+}
+
+ul {
+   display: flex;
+   flex-direction: column;   
+   
+}
+
+.nav-menu-items li{
+   list-style: none;
+   position: relative;
+   height: 100%;
+   width: 300px;
+   justify-content: flex-start;
+   padding: 60px 0px;
+}
+
+
+.nav-text, .logout-text {
+   justify-content: start;     
+   
+}
+.logout-text{
+   display: flex;
+   flex-direction: row;
+}
+
+.nav-text a, .logout-text{
+   text-decoration: none;
+   height: 100%;
+   display: flex;   
+   border-radius: 10px;
+   transition: all 0.4 ease;
+}
+.nav-text span, .logout-text span{
+   font-family: Roboto Condesed, sans-serif;
+   font-weight: 700;
+   font-size: 1;
+   color: #FFFFFF;
+   display: flex;
+   width: 500px;
+   height: 71px;   
+   margin-left: 10px;
+   align-items: center;   
+   text-align: center;
+   opacity: 0;
+   
+}
+
+.nav-text img, .logout-text img{
+   width: 4em;
+   height:4em;
+   
+}
+.nav-menu.active .menu-title{
+   opacity: 1;
+}
+
+.nav-menu.active .nav-text a:hover, .nav-menu.active .logout-text:hover{
+   background-color:#0E3127;
+}
+ 
+.tooltip{
+   position: absolute;
+   background-color: #0E3127;
+   left:80px;
+   top: 0;
+   transform: translateY(50%);
+   height: 50px;
+   width: 80px;
+   align-items: center;
+   justify-content: center; 
+   transition: 0s;
+   opacity: 0;
+}
+
+.tooltip:hover {
+   transition: all 0.5s ease;
+   opacity: 1;
+   
+}
+.nav-menu.active .tooltip{
+   opacity: 0;
+   
+}
+.bma-logo{
+   width: 120px;
+   height: 120px;
+   display: flex;
+   margin-left: 30px;
+   align-items: center;
+   justify-content: flex-start;
+   position: fixed;
+   top:0;
+   left:0
+     
+   
+}
+.bma-logo img{
+   width: 100%;
+   height: 100%;
+   
+}
+
+.navbar-toggle{
+   position: absolute;
+   top: 10px;
+   left: 120px; 
+   z-index:2 ; 
+   
+}
+.navbar-open{
+   position: absolute;
+   top: 10px;
+   left: 320px;
+   opacity: 0; 
+   z-index: 2;
+}
+.nav-menu.active .navbar-open{
+   opacity: 1;
+}
+.nav-menu.active .navbar-toggle{
+   opacity: 0;
+}
+.navbar-arrow{
+   font-size: 24px;
+   color:#A99F54;
+} 
+
+.logout{
+   margin-left: 20px;
+   width: 2em;
+   height: 2em;
+   font-size: 1.5rem;
+   border: none;
+   border-radius: 50%; 
+   background-color: #8B0000;
+   color: #FFFFFF;
+   transform:rotate(270deg);
+   align-items: center;
+   
+} 
+
+
