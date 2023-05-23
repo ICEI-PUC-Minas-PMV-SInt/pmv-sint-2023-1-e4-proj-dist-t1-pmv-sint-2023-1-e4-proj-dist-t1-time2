@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Input.module.css';
-import InputMask from 'react-input-mask';
+
 
 const onlyNumbers = (str) => str.replace (/[^0-9]/g,'');
 
@@ -23,7 +23,7 @@ function MaskedImput ({value, onChange,name,mask,text,onBlur,onClick,onEnter}) {
             <label htmlFor={name}>{text}:</label>
         </div>
 
-        <InputMask 
+        <input 
         name={name}
         mask={mask}
         value={value}

@@ -3,6 +3,7 @@ import MaskedImput from '../layouts/form/MaskedInput';
 import Submit from '../layouts/form/Submit';
 import Input from '../layouts/form/Input';
 import styles from "./cadastrobeneficiarioform.module.css"
+import TrackNis from '../layouts/form/TrackNis';
 
 function CadastroForm({handleSubmit,btnText,beneficiariosData}){
     
@@ -13,6 +14,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
         const arr =[obj]
         return arr
     }
+    
     function onBlurCep(e){
         const {value}=e.target
         const cep =value?.replace(/[^0-9]/g,'')
@@ -54,14 +56,14 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
     return(
         <form onSubmit= {submit} className={styles.benform}>
             <fieldset className={styles.dadospessoais}>
-            <legend>Informações Pessoais</legend>    
-            <div className={styles.identificacao}>
+            <legend>Informações Pessoais</legend>
+            <TrackNis/>   
+            {/*<div className={styles.identificacao}>
                 <div>
-                <MaskedImput
-                    text="CPF"
-                    name="CPF"
-                    mask="999.999.999-99"
-                    value={beneficiarios.cpf}                    
+                <Input
+                    text="NIS"
+                    name="NIS"                    
+                    value={beneficiarios.nis}                    
                     onChange={handleChange}
                                                        
                 />
@@ -87,7 +89,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     placeholder=""
                     handleOnChange={handleChange}
                 /> 
-                 </div> 
+    </div> */}
             </fieldset>     
             
             <fieldset className={styles.localizacao}>

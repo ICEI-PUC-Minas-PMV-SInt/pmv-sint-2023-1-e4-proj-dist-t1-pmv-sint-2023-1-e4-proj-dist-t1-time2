@@ -5,6 +5,7 @@ import Footer from './components/layouts/Footer'
 import Home from './components/pages/Home'
 import PortalFuncionario from'./components/pages/PortalFuncionario'
 import AreadoBeneficiario from './components/beneficiarios/AreadoBeneficiario'
+import CadastroBeneficiario from './components/beneficiarios/CadastroBeneficiario'
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Route path = "/" element ={<Home/>}/>               
         <Route path='/PortalFuncionario' element={<PortalFuncionario/>}/>
         <Route path='/AreadoBeneficiario' element={<AreadoBeneficiario/>}/>
+        <Route path='/CadastrodoBeneficiario' element={<CadastroBeneficiario/>}/>
+        
 
       
       </Routes>

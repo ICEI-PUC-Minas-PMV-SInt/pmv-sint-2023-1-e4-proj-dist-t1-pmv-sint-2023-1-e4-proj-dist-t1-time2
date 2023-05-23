@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import styles from "./BuscaCpf.module.css"
-import MaskedImput from "../layouts/form/MaskedInput"
 import { Link } from 'react-router-dom';
+import Input from '../layouts/form/Input';
+
 function BuscaCpf () {
     const [data, setData] = useState([]);
     const [cpf, setCpf]=useState('')    
@@ -41,15 +42,14 @@ function BuscaCpf () {
         <>
         <div className={styles.busca_cpf}>
             
-            <MaskedImput
-                text="CPF"
-                name="CPF"
-                value={cpf}
-                mask="999.999.999-99"
+            <Input
+                text="NIS"
+                name="NIS"
+                value={cpf}                
                 onChange={(e)=> setCpf(e.target.value)}
                 onBlur={submitHandler}
                 
-            />
+            />*
            <div>
            <button>Buscar</button>                                                             
            <button onClick={()=>cleanCpf('')}>Limpar</button>
