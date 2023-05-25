@@ -7,10 +7,7 @@ function TrackNis({beneficiariosData}) {
     const [name,setName]=useState([])
     const [beneficiarios,setBeneficiarios]=useState(beneficiariosData || {});
 
-    const convertToArray=(obj)=>{
-        const arr =[obj]
-        return arr
-    }
+    
     const onBlurNis = (e) => {
         e.preventDefault()
         const {value} = e.target
@@ -30,8 +27,9 @@ function TrackNis({beneficiariosData}) {
         })           
             .then((resp) => resp.json())
             .then((data)=> {
-                const array=convertToArray(data);
-                setName(array)
+                
+                
+                setName(data)
                 
             })
             .catch((err) => console.log(err))
@@ -50,18 +48,19 @@ function TrackNis({beneficiariosData}) {
                                    
             type="text" 
             text="NIS"
-            name="nis"                                              
+            name="nis" 
+            value={beneficiarios.nis}                                             
             onBlur={onBlurNis}
             onChange={handleChange}                
         />
-        {name.length > 0 ? (name.map ((name) =>(        
+        {name.length > 0 ? (name.map ((item) =>(        
         
             <Input
-                key={name.nome}
+                key={item.titularBolsaFamilia}
                 type="text" 
                 text="Nome"
                 name="nome"
-                value={beneficiarios.nome}
+                value={item.titularBolsaFamilia.nome}
                 onChange={handleChange}
                 placeholder=""                                
         />))):(
@@ -74,9 +73,26 @@ function TrackNis({beneficiariosData}) {
            /> )} 
         </div>
         <div>
-        <button>Buscar</button>                                                             
-           
-        </div>
+        {name.length > 0 ? (name.map ((item) =>(        
+        
+        <Input
+            key={item.quantidadeDependentes}
+            type="text" 
+            text="Quantidade de Dependentes"
+            name="dependentes"
+            value={item.quantidadeDependentes}
+            onChange={handleChange}
+            placeholder=""                                
+    />))):(
+        <Input
+                                
+       type="text" 
+       text="Quantidade de Dependentes"
+       name="dependentes"
+       placeholder=""                              
+       /> )} 
+    </div>
+        
       
       
 

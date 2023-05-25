@@ -9,7 +9,7 @@ function CadastroBeneficiario(){
     
     function createBenef(beneficiarios) {
        
-        fetch('http://localhost:5000/beneficiarios', {
+        fetch('https://localhost:7255/api/Beneficiarios', {
             method: 'POST',
             headers: {
                 'Content-type':'application/json',
@@ -19,6 +19,7 @@ function CadastroBeneficiario(){
         .then((resp)=> resp.json())
         .then((data)=>{
             
+            console.log(data)
             navigate('/AreadoBeneficiario', {state: 'Beneficiário cadastrado com sucesso!'})
         })
         .catch((err)=>console.log(err))

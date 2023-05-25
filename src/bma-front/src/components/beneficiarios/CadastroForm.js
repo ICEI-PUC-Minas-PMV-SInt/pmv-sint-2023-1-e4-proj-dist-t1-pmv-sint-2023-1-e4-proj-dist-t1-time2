@@ -22,7 +22,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
         if(cep?.length !==8) {
             return;
         }
-        fetch(`http://viacep.com.br/ws/${cep}/json/`, {
+        fetch(`https://brasilapi.com.br/api/cep/v1/${cep}`, {
             method: 'GET',
             headers:{
                 'Content-Type':'aplication/json',
@@ -58,38 +58,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
             <fieldset className={styles.dadospessoais}>
             <legend>Informações Pessoais</legend>
             <TrackNis/>   
-            {/*<div className={styles.identificacao}>
-                <div>
-                <Input
-                    text="NIS"
-                    name="NIS"                    
-                    value={beneficiarios.nis}                    
-                    onChange={handleChange}
-                                                       
-                />
-                </div>
-                <div >
-               
-                <Input
-                                         
-                    type="text" 
-                    text="Nome"
-                    name="name"
-                    placeholder=""                                
-                    handleOnChange={handleChange}                 
-                />
-                </div>
-            </div>  
-                
-            <div className={styles.identificacao}>    
-                <Input 
-                    type="date" 
-                    text="Data de Nascimento"
-                    name="datenascimento"
-                    placeholder=""
-                    handleOnChange={handleChange}
-                /> 
-    </div> */}
+            
             </fieldset>     
             
             <fieldset className={styles.localizacao}>
@@ -110,8 +79,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     key={adress.cep}                   
                     type="text" 
                     text="Cidade"
-                    name="localidade"
-                    value={adress.localidade}                               
+                    name="city"
+                    value={adress.city}                               
                     onBlur={handleChange}                
                 />
                
@@ -120,7 +89,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                                             
                    type="text" 
                    text="Cidade"
-                   name="localidade"
+                   name="endereco"
                    placeholder=""                              
                    /> )} 
                 
@@ -129,8 +98,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     key={adress.cep}                   
                     type="text" 
                     text="Estado"
-                    name="uf"
-                    value={adress.uf}
+                    name="state"
+                    value={adress.state}
                     onBlur={handleChange}                               
                                     
                 />
@@ -138,7 +107,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 ))):(
                     <Input
                     type="text" 
-                    text="Estado"                    
+                    text="Estado"
+                    name="state"                    
                     placeholder=""                              
                     /> )}       
                                             
@@ -154,8 +124,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     key={adress.cep}                   
                     type="text" 
                     text="Logradouro"
-                    name="logradouro"
-                    value={adress.logradouro}                               
+                    name="street"
+                    value={adress.street}                               
                     onBlur={handleChange}                
                 />
                
@@ -163,7 +133,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
             <Input
                 type="text" 
                 text="Logradouro"
-                name="address"
+                name="street"
                 placeholder=""                                
                 />)}
             </div>
@@ -191,8 +161,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     key={adress.cep}                   
                     type="text" 
                     text="Bairro"
-                    name="bairro"
-                    value={adress.bairro}                               
+                    name="neighborhood"
+                    value={adress.neighborhood}                               
                     onBlur={handleChange}                
                 />
                
@@ -200,7 +170,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
             <Input
                 type="text" 
                 text="Bairro"
-                name="bairro"
+                name="neighborhood"
                 placeholder=""                                
                 />)}
                 </div>
