@@ -81,7 +81,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     text="Cidade"
                     name="city"
                     value={adress.city}                               
-                    onBlur={handleChange}                
+                    onBlur={handleChange}
+                    handleOnChange={handleChange}                
                 />
                
                 ))):(
@@ -100,7 +101,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     text="Estado"
                     name="state"
                     value={adress.state}
-                    onBlur={handleChange}                               
+                    onBlur={handleChange}
+                    handleOnChange={handleChange}                               
                                     
                 />
                
@@ -126,7 +128,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     text="Logradouro"
                     name="street"
                     value={adress.street}                               
-                    onBlur={handleChange}                
+                    onBlur={handleChange}
+                    handleOnChange={handleChange}                
                 />
                
                 ))):(
@@ -145,7 +148,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     text="Número"
                     name="number"
                     placeholder=""                                
-                    handleOnChange={handleChange}                 
+                    handleOnChange={handleChange}
+                                     
                 /> 
                 
                 
@@ -163,7 +167,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     text="Bairro"
                     name="neighborhood"
                     value={adress.neighborhood}                               
-                    onBlur={handleChange}                
+                    onBlur={handleChange}
+                    handleOnChange={handleChange}                
                 />
                
                 ))):(

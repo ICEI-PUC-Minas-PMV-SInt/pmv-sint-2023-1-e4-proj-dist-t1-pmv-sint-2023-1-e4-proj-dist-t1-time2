@@ -6,7 +6,7 @@ import { SidebarData } from './SidebarData';
 import "./Sidebar.css";
 import {RiLogoutCircleRLine} from 'react-icons/ri'
 import person from './images/person.png';
-import { AuthContext } from '../../../context/Auth';
+
 
 
 function Sidebar() {

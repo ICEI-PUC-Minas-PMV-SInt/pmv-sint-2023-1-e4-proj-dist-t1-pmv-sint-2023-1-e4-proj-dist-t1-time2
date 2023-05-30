@@ -5,16 +5,16 @@ import Input from '../layouts/form/Input';
 
 function BuscaCpf () {
     const [data, setData] = useState([]);
-    const [cpf, setCpf]=useState('')    
+    const [id, setId]=useState('')    
     const submitHandler= (e) => {
        
         e.preventDefault();
         const {value} = e.target
-        const cpf =value.replace(/[^0-9]/g,'')
+        const id =value
              
              
         
-        fetch(`http://localhost:5000/beneficiarios?CPF=${cpf}`, {
+        fetch(`https://localhost:7255/api/Beneficiarios/${id}`, {
             method: 'GET',
             headers:{
                 'Content-Type':'aplication/json',
@@ -34,7 +34,7 @@ function BuscaCpf () {
             .catch((err) => console.log(err))
         }
     const cleanCpf=()=>{
-        setCpf('')
+        setId('')
         setData([])
     }    
         
@@ -43,10 +43,10 @@ function BuscaCpf () {
         <div className={styles.busca_cpf}>
             
             <Input
-                text="NIS"
-                name="NIS"
-                value={cpf}                
-                onChange={(e)=> setCpf(e.target.value)}
+                text="ID"
+                name="beneficiarioId"
+                value={id}                
+                onChange={(e)=> setId(e.target.value)}
                 onBlur={submitHandler}
                 
             />*

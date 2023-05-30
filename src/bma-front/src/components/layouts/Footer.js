@@ -5,7 +5,7 @@ function Footer(){
     return( 
         <footer>
             <p className={styles.footer}> 
-                <span>BMA Poços de Caldas</span> &copy; 2022
+                <span>BMA Poços de Caldas</span> &copy; 2023
             </p>
         </footer>
     )

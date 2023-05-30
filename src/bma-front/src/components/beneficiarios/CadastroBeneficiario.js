@@ -29,9 +29,7 @@ function CadastroBeneficiario(){
 
     return(
         <>
-            <nav>
-                <Sidebar/>
-            </nav>
+            
             
             <div className={styles.content}>
                 <div className={styles.formtitle}>               
