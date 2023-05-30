@@ -49,7 +49,7 @@ function BuscaCpf () {
                 onChange={(e)=> setId(e.target.value)}
                 onBlur={submitHandler}
                 
-            />*
+            />
            <div>
            <button>Buscar</button>                                                             
            <button onClick={()=>cleanCpf('')}>Limpar</button>
@@ -64,7 +64,7 @@ function BuscaCpf () {
             (
             <div className={styles.result}>
             <p>Usuário não encontrado</p>
-            <button><Link to='/CadastrodoBeneficiario'>Cadastrar Beneficiario</Link></button>
+            <button><Link to='/CadastroBeneficiario'>Cadastrar Beneficiario</Link></button>
             </div>)}
            
         </>    

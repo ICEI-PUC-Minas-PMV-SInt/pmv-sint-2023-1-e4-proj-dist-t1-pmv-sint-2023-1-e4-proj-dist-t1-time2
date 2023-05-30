@@ -4,6 +4,7 @@ import Navbar from './components/layouts/Navbar'
 import Footer from './components/layouts/Footer'
 import Home from './components/pages/Home/Home'
 import CadastroBeneficiario from './components/beneficiarios/CadastroBeneficiario'
+import AreadoBeneficiario from './components/beneficiarios/AreadoBeneficiario'
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
       <Routes>
 
         <Route path = "/" element ={<Home/>}/>               
-        <Route path='/CadastroBeneficiario' element={<CadastroBeneficiario/>}/>    
+        <Route path='/CadastroBeneficiario' element={<CadastroBeneficiario/>}/>  
+        <Route path='/AreadoBeneficiario' element={<AreadoBeneficiario/>}/>   
                
       </Routes>
 

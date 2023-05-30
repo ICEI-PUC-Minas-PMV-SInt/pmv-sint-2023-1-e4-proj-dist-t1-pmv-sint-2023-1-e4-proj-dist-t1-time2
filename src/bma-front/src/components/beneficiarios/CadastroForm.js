@@ -91,7 +91,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                    type="text" 
                    text="Cidade"
                    name="endereco"
-                   placeholder=""                              
+                   placeholder=""
+                   handleOnChange={handleChange}                             
                    /> )} 
                 
                 {data.length > 0 ? (data.map ((adress) =>(
@@ -111,7 +112,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     type="text" 
                     text="Estado"
                     name="state"                    
-                    placeholder=""                              
+                    placeholder="" 
+                    handleOnChange={handleChange}                             
                     /> )}       
                                             
             </div>                   
@@ -137,7 +139,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 type="text" 
                 text="Logradouro"
                 name="street"
-                placeholder=""                                
+                placeholder="" 
+                handleOnChange={handleChange}                               
                 />)}
             </div>
                 <div>
@@ -176,7 +179,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 type="text" 
                 text="Bairro"
                 name="neighborhood"
-                placeholder=""                                
+                placeholder=""
+                handleOnChange={handleChange}                                
                 />)}
                 </div>
                 </div>                       

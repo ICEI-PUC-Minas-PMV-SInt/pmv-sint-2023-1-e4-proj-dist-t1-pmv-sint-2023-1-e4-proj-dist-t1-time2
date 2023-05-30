@@ -69,7 +69,8 @@ function TrackNis({beneficiariosData}) {
            type="text" 
            text="Nome"
            name="nome"
-           placeholder=""                              
+           placeholder=""
+           onChange={handleChange}                              
            /> )} 
         </div>
         <div>
@@ -89,7 +90,8 @@ function TrackNis({beneficiariosData}) {
        type="text" 
        text="Quantidade de Dependentes"
        name="dependentes"
-       placeholder=""                              
+       placeholder=""
+       onChange={handleChange}                              
        /> )} 
     </div>
         
