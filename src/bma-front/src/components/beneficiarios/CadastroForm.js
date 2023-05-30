@@ -46,7 +46,8 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 
     
     function handleChange(e) {
-        setBeneficiarios({...beneficiarios, [e.target.name]: e.target.value })             
+        setBeneficiarios({...beneficiarios, [e.target.name]: e.target.value }) 
+        console.log(beneficiarios)            
     }
     function submit(e) {
         e.preventDefault();
@@ -65,10 +66,9 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
             <legend>Endereço</legend>  
                 <div className={styles.endereco}>
                <div> 
-                <MaskedImput
+                <Input
                     text="CEP"
                     name="cep"
-                    mask="99999-999"
                     value={beneficiarios.cep}
                     onBlur={onBlurCep}
                     onChange={handleChange}
@@ -76,13 +76,13 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 />
               {data.length > 0 ? (data.map ((adress) =>(
                 <Input
-                    key={adress.cep}                   
+                    key={adress.id}                   
                     type="text" 
                     text="Cidade"
                     name="city"
                     value={adress.city}                               
                     onBlur={handleChange}
-                    handleOnChange={handleChange}                
+                                    
                 />
                
                 ))):(
@@ -92,18 +92,18 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                    text="Cidade"
                    name="endereco"
                    placeholder=""
-                   handleOnChange={handleChange}                             
+                                                
                    /> )} 
                 
                 {data.length > 0 ? (data.map ((adress) =>(
                 <Input
-                    key={adress.cep}                   
+                    key={adress.id}                   
                     type="text" 
                     text="Estado"
                     name="state"
                     value={adress.state}
                     onBlur={handleChange}
-                    handleOnChange={handleChange}                               
+                                                   
                                     
                 />
                
@@ -113,7 +113,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                     text="Estado"
                     name="state"                    
                     placeholder="" 
-                    handleOnChange={handleChange}                             
+                                                 
                     /> )}       
                                             
             </div>                   
@@ -125,13 +125,13 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
             <div className={styles.street}>
             {data.length > 0 ? (data.map ((adress) =>(
                 <Input
-                    key={adress.cep}                   
+                    key={adress.id}                   
                     type="text" 
                     text="Logradouro"
                     name="street"
                     value={adress.street}                               
                     onBlur={handleChange}
-                    handleOnChange={handleChange}                
+                                    
                 />
                
                 ))):(
@@ -140,7 +140,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 text="Logradouro"
                 name="street"
                 placeholder="" 
-                handleOnChange={handleChange}                               
+                                              
                 />)}
             </div>
                 <div>
@@ -165,13 +165,13 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 />  
                 {data.length > 0 ? (data.map ((adress) =>(
                 <Input
-                    key={adress.cep}                   
+                    key={adress.id}                   
                     type="text" 
                     text="Bairro"
                     name="neighborhood"
                     value={adress.neighborhood}                               
                     onBlur={handleChange}
-                    handleOnChange={handleChange}                
+                                    
                 />
                
                 ))):(
@@ -180,7 +180,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                 text="Bairro"
                 name="neighborhood"
                 placeholder=""
-                handleOnChange={handleChange}                                
+                                                
                 />)}
                 </div>
                 </div>                       

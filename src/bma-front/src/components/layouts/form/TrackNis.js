@@ -37,7 +37,8 @@ function TrackNis({beneficiariosData}) {
         
     }
      function handleChange(e) {
-        setBeneficiarios({...beneficiarios, [e.target.name]: e.target.value })             
+        setBeneficiarios({...beneficiarios, [e.target.name]: e.target.value })
+        console.log(beneficiarios)             
     }
     
     return(
@@ -48,20 +49,20 @@ function TrackNis({beneficiariosData}) {
                                    
             type="text" 
             text="NIS"
-            name="nis" 
+            name="titularBolsaFamilia.nis" 
             value={beneficiarios.nis}                                             
             onBlur={onBlurNis}
-            onChange={handleChange}                
+            handleOnChange={handleChange}                
         />
         {name.length > 0 ? (name.map ((item) =>(        
         
             <Input
-                key={item.titularBolsaFamilia}
+                key={item.id}
                 type="text" 
                 text="Nome"
-                name="nome"
+                name="titularBolsaFamilia.nome"
                 value={item.titularBolsaFamilia.nome}
-                onChange={handleChange}
+                onBlur={handleChange}
                 placeholder=""                                
         />))):(
             <Input
@@ -70,28 +71,28 @@ function TrackNis({beneficiariosData}) {
            text="Nome"
            name="nome"
            placeholder=""
-           onChange={handleChange}                              
+                                        
            /> )} 
         </div>
         <div>
         {name.length > 0 ? (name.map ((item) =>(        
         
         <Input
-            key={item.quantidadeDependentes}
+            key={item.id}
             type="text" 
             text="Quantidade de Dependentes"
-            name="dependentes"
+            name="quantidadeDependentes"
             value={item.quantidadeDependentes}
-            onChange={handleChange}
+            onBlur={handleChange}
             placeholder=""                                
     />))):(
         <Input
                                 
        type="text" 
        text="Quantidade de Dependentes"
-       name="dependentes"
+       name="quantidadeDependentes"
        placeholder=""
-       onChange={handleChange}                              
+                                     
        /> )} 
     </div>
         
