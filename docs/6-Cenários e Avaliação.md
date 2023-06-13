@@ -20,7 +20,7 @@ Cenário|Interoperabilidade
 |:---:|:---|
 Objetivo do Teste|Testar se o sistema se comunica com aplicações externas.
 Requisitos que motivaram esse teste|<ul><li>RNF-09 O sistema deverá interoperar com aplicações legadas com baixo acoplamento utilizando APIs ou outros recursos para consumo de serviços.</li></ul>
-Análise|O sistema possui boa inteorperabilidade.
+Análise|O sistema possui boa interoperabilidade.
 
 Subtipo de Teste|Interoperabilidade
 |:---:|:---|
