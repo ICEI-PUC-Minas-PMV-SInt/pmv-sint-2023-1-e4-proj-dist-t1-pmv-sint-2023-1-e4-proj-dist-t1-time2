@@ -34,7 +34,7 @@ namespace api_bma.Controllers
             _beneficiarios = new List<Beneficiario>();
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add($"chave-api-dados", "94347ff5413fdff1f093ae4440d67130");
+                client.DefaultRequestHeaders.Add($"chave-api-dados", "");
                 using (var response = await client.GetAsync("https://api.portaldatransparencia.gov.br/api-de-dados/bolsa-familia-disponivel-beneficiario-por-municipio?codigoIbge=3151800&mesAno=202001"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
@@ -79,7 +79,10 @@ namespace api_bma.Controllers
         }
         [HttpPost]
         public async Task<ActionResult> Create(Beneficiario model)
+
         {
+           
+            
             _context.Beneficiarios.Add(model);
             await _context.SaveChangesAsync();
             

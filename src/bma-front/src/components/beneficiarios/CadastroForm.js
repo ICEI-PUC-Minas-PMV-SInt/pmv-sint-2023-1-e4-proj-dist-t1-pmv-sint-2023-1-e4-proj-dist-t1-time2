@@ -90,7 +90,7 @@ function CadastroForm({handleSubmit,btnText,beneficiariosData}){
                                             
                    type="text" 
                    text="Cidade"
-                   name="endereco"
+                   name="city"
                    placeholder=""
                                                 
                    /> )} 

@@ -5,7 +5,7 @@ import Input from './Input';
 
 function TrackNis({beneficiariosData}) {
     const [name,setName]=useState([])
-    const [beneficiarios,setBeneficiarios]=useState(beneficiariosData || {});
+    const [beneficiario,setBeneficiarios]=useState(beneficiariosData || {});
 
     
     const onBlurNis = (e) => {
@@ -37,8 +37,8 @@ function TrackNis({beneficiariosData}) {
         
     }
      function handleChange(e) {
-        setBeneficiarios({...beneficiarios, [e.target.name]: e.target.value })
-        console.log(beneficiarios)             
+        setBeneficiarios({...beneficiario, [e.target.name]: e.target.value })
+        console.log(beneficiario)             
     }
     
     return(
@@ -49,8 +49,8 @@ function TrackNis({beneficiariosData}) {
                                    
             type="text" 
             text="NIS"
-            name="titularBolsaFamilia.nis" 
-            value={beneficiarios.nis}                                             
+            name="titularBolsaFamilia_nis" 
+            value={beneficiario.nis}                                             
             onBlur={onBlurNis}
             handleOnChange={handleChange}                
         />
